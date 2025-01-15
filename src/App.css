@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,500,600,700&display=swap'); */
+
+/* src/assets/fonts/fonts.css */
+@font-face {
+  font-family: 'Lufga';
+  src: url('./assets/font/LufgaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vilaka Modern Serif Font Demo! Demo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Vilaka Modern Serif Font Demo! Demo'), url('./assets/fontVilaka/Vilaka\ Modern\ Serif.woff') format('woff');
+}
+
+:root {
+  --black-color: #333333;
+  --text-color: #444444;
+  --white-color: #ffffff;
+  --background-color: #FAFAFA;
+  --primary-color: #DAA547;
+  --gray-color: #F8F8F8;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.global {
+  position: relative;
+  background: var(--background-color);
+  overflow-x: hidden;
+}
+
+
+.button-one {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 16px;
+  padding: 4px 8px 4px 16px;
+  font-size: 16px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button-one:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+
+/* Header */
+.header {
+  padding: 40px 0;
+  margin: 10px 30px;
+  z-index: 1000;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-name {
+  font-family: 'Lufga';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  padding: 34px 40px;
+  border-radius: 16px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  margin: 10px;
+}
+
+.footer-title {
+  font-family: 'Lufga';
+  font-weight: 600;
+  font-size: 180px;
+}
+
+.footer-cover {
+  background: var(--white-color);
+  padding: 10px 20px 10px 10px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  gap: 5px;
+  font-size: 20px;
+  font-family: 'Lufga';
+  color: var(--primary-color);
+}
+
+.footer-btn {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: none;
+  font-size: 18px;
+  font-family: 'Lufga';
+  font-weight: 400;
+  min-width: 105px;
+}
+
+.footer-input {
+  background: var(--gray-color);
+  border-radius: 16px;
+  border: none;
+  box-shadow: 1px 1px 4px 0px #00000026 inset;
+  padding: 4px 10px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.footer-text {
+  font-family: 'Lufga';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.1px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-family: Lufga;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.88px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-family: 'Lufga';
+  font-weight: 400;
+}
+
+
+/* Home */
+.home {
+  /* padding: 80px 0; */
+  margin: 0 10px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content {
+  position: absolute;
+  top: 0;
+  /* Align content to the top */
+  left: 0;
+  /* Align content to the left */
+  right: 0;
+  /* Stretch content to the right */
+  bottom: 0;
+  /* Stretch content to the bottom */
+  display: flex;
+  /* Enables flexible alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  align-items: center;
+  /* Center content horizontally */
+  z-index: 1;
+  /* Ensures content is above the image */
+  padding: 20px;
+  /* Optional padding for spacing */
+  text-align: center;
+}
+
+.about {
+  padding: 0 10px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.about-title {
+  /* font-family: 'Vilaka Modern Serif Font Demo! Demo'; */
+  font-size: 140px;
+  font-weight: 200;
+}
+
+.about-image{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.about-description {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 75%;
+}
+
+.about-subtitle {
+  font-family: Lufga;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.bamboo-left-background,
+.bamboo-right-background {
+  position: absolute;
+  top: 0;
+  /* width: 50%; */
+  height: 100%;
+  z-index: -1; /* Ensure bamboo images are behind other content */
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.bamboo-left-background {
+  left: -10%;
+}
+
+.bamboo-right-background {
+  right: -10%;
+}
+
+
+
+
+.about-card {
+  min-height: 270px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-card-title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  gap: 8px;
+}
+
+
+
+.about-card-description {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.expertise {
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: var(--white-color);
+  border: 2px solid #E3B461;
+  margin-bottom: 80px;
+}
+
+.expertise-title {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+}
+
+.expertise-subtitle {
+  font-family: 'Lufga';
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.expertise-description {
+  font-family: 'Lufga';
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.expertise-card {
+  border-radius: 8px;
+  border: 1px solid var(--gray-color);
+  background: var(--background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+}
+
+.expertise-card-two {
+  position: relative;
+  border-radius: 8px;
+  /* border: 1px solid var(--gray-color); */
+  background: var(--gray-color);
+  min-height: 280px;
+}
+
+.expertise-content {
+  position: absolute;
+  top: 0;
+  /* Align content to the top */
+  left: 0;
+  /* Align content to the left */
+  right: 0;
+  /* Stretch content to the right */
+  bottom: 0;
+  /* Stretch content to the bottom */
+
+  /* Center content horizontally */
+  z-index: 1;
+  /* Ensures content is above the image */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expertise-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.expertise-card-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  /* padding: 0; */
+}
+
+.expertise-title-card {
+  color: var(--white-color);
+  border-radius: 40px;
+  padding: 10px 24px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-color);
+  font-size: 16px;
+  font-weight: 500;
+  /* width: auto; */
+}
+
+.expertise-description-two {
+  font-size: 16px;
+  font-weight: 275;
+  text-align: center;
+}
+
+
+.portfolio {
+  margin-bottom: 80px;
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+}
+
+.portfolio-subtitle {
+  font-family: 'Lufga';
+  font-weight: 500;
+  size: 48px;
+}
+
+
+.portfolio-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  opacity: 0px;
+  background: var(--white-color);
+  border: 1px solid var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.portfolio-card-title {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: 'Lufga';
+  font-weight: 500;
+}
+
+.portfolio-card-subtitle {
+  font-size: 40px;
+  font-family: 'Lufga';
+  font-weight: 400;
+}
+
+.portfolio-card-description {
+  font-family: 'Lufga';
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.portfolio-card-item {
+  border: 1px solid #DCDCDC;
+  border-radius: 40px;
+  padding: 6px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.pricing {
+  background-color: var(--black-color);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.pricing-title {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing-subtitle {
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--white-color);
+  font-family: 'Lufga';
+}
+
+.pricing-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--white-color);
+  font-family: 'Lufga';
+}
+
+.pricing-image-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.pricing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+
+}
+
+.pricing-image-content {
+
+  position: absolute;
+  top: 0;
+  /* Align content to the top */
+  left: 0;
+  /* Align content to the left */
+  right: 0;
+  /* Stretch content to the right */
+  bottom: 0;
+  /* Center content horizontally */
+  z-index: 1;
+  /* Ensures content is above the image */
+  padding: 20px;
+}
+
+.pricing-card-title {
+  font-size: 86px;
+  font-weight: 500;
+  font-family: 'Lufga';
+  color: var(--white-color);
+}
+
+.pricing-card-item {
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(16px);
+  background: #FFFFFF33;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Lufga';
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: -70px;
+  border-radius: 20px;
+  box-shadow: 1px 8px 8px 0px #00000026 inset;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color);
+}
+
+.hero-container {
+
+  position: absolute;
+  top: 0;
+  /* Align content to the top */
+  left: 0;
+  /* Align content to the left */
+  right: 0;
+  /* Stretch content to the right */
+  bottom: 0;
+  /* Center content horizontally */
+  z-index: 1;
+}
+
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title-two {
+  font-size: 86px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-align: center;
+
+}
+
+.hero-title {
+  font-size: 86px;
+  font-weight: 500;
+  color: var(--black-color);
+  text-align: center;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional background color */
+  overflow: hidden;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  /* Adjust based on your container's width */
+  height: 100%;
+  /* Adjust based on your container's height */
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  object-fit: cover;
+  /* Ensures the image covers the container */
+  z-index: 99;
+}
+
+
+
+@media (max-width: 1220px) {
+  .pricing-card-title {
+    font-size: 36px;
+  }
+
+  .pricing-card-item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer-title,
+  .about-title {
+    font-size: 48px;
+  }
+  .about-image{
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-title-two {
+    font-size: 32px;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 24px;
+    line-height: 38px;
+
+  }
+
+  .pricing-card-title {
+    font-size: 36px;
+  }
+
+  .pricing-image-container {
+    height: 1000px;
+  }
+  .bamboo-left-background {
+    left: -20%;
+  }
+  
+  .bamboo-right-background {
+    right: -20%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .pricing-image-container {
+    height: 1420px;
+  }
+
+  .bamboo-left-background {
+    left: -50%;
+  }
+  
+  .bamboo-right-background {
+    right: -50%;
+  }
+}
+
+@media (max-width: 370px) {
+  .pricing-image-container {
+    height: 1740px;
+  }
+}
