@@ -263,9 +263,6 @@
   right: -10%;
 }
 
-
-
-
 .about-card {
   min-height: 270px;
   border-radius: 8px;
@@ -697,10 +694,13 @@
   }
 
   .bamboo-left-background {
+    width: 80%;
     left: -50%;
   }
   
   .bamboo-right-background {
+    width: 80%;
+
     right: -50%;
   }
 }
